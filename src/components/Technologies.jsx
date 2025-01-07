@@ -27,7 +27,7 @@ function Effect({children}){
 
 function Technologies() {
   return (
-    <div id="technologies" className="h-screen ">
+    <div id="technologies" className="h-screen flex flex-col justify-center items-center">
       <h1 className="pt-28 justify-self-center text-4xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent">Technologies</h1>
         <div className="flex p-40 gap-4 overflow-x-auto">
         <Effect>

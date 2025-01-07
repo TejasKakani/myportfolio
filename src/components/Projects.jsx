@@ -12,7 +12,7 @@ function Card({title, description, link}) {
         ref={ref}
         style={{
             scale: scrollYProgress,
-            opacity: scrollYProgress
+            opacity: scrollYProgress,
         }}
         >
             <div className="bg-white p-4 rounded-lg shadow-lg h-96 w-80">
@@ -27,7 +27,7 @@ function Projects() {
 
   return (
     <>
-    <div id="projects" className="h-screen ">
+    <div id="projects" className="h-screen flex flex-col justify-center items-center">
       <h1 className="pt-28 justify-self-center text-4xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent">Projects</h1>
         <div className="flex p-20 gap-4 overflow-x-auto">
             <Card title="Voicer ( In Progress )" description="A Testimonial gathering website for businesses." />
