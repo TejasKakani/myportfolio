@@ -34,7 +34,7 @@ function Header() {
   }
 
   return (
-    <div id="header" className="fixed flex w-full p-5 z-10 justify-around text-white backdrop-blur-md shadow-lg">
+    <div id="header" className="fixed flex w-screen p-5 z-10 justify-around text-white backdrop-blur-md shadow-lg">
       <text className="text-lg">My Portfolio</text>
       <List classes="hidden md:flex space-x-6 text-lg" />
       {showMenu ? (

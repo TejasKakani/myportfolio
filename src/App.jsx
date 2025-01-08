@@ -16,7 +16,7 @@ function App() {
   });
 
   return (
-    <>
+    <div>
         <video src="background.mp4" loop autoPlay muted className="fixed top-0 left-0 object-cover -z-10 w-full h-full" />
         <motion.div
         style={{ scaleX }}
@@ -28,7 +28,7 @@ function App() {
         <Projects />
         <About />
         <Contact />
-    </>
+    </div>
   )
 }
 

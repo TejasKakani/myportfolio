@@ -3,7 +3,7 @@ import {motion} from 'framer-motion';
 function Contact() {
   return (
     <div id="contact" className="h-screen flex flex-col justify-center items-center">
-        <h1 className="pt-28 text-4xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent">Get In Touch</h1>
+        <h1 className=" text-4xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent">Get In Touch</h1>
         <p className="text-white m-10">Want to Chat? Send me an email through this button and I'll respond Whenever I can. Thank you</p>
         <motion.div
         whileHover={{ scale: 1.1 }}

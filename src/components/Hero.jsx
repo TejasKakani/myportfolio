@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 function Hero() {
 
   return (
-    <div id="hero" className="flex justify-evenly py-40 h-full items-center w-full min-h-screen ">
+    <div id="hero" className="flex justify-evenly py-40 items-center w-screen h-screen ">
         <div className="p-20">
             <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent">Tejas Kakani</h1>
             <h2 className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent">Software Developer</h2>
