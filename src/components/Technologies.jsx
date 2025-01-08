@@ -29,7 +29,7 @@ function Technologies() {
   return (
     <div id="technologies" className="h-screen flex flex-col justify-center items-center">
       <h1 className=" justify-self-center text-4xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent">Technologies</h1>
-        <div className="flex p-40 gap-4 overflow-x-auto w-screen">
+        <div className="flex p-40 gap-4 overflow-x-auto w-screen justify-around ">
         <Effect>
             <BiLogoCPlusPlus className="text-9xl text-blue-500" />
             <BiLogoJavascript className="text-9xl text-yellow-500" />

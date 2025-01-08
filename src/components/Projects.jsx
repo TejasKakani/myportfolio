@@ -29,7 +29,7 @@ function Projects() {
     <>
     <div id="projects" className="h-screen flex flex-col justify-center items-center">
       <h1 className=" justify-self-center text-4xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent">Projects</h1>
-        <div className="flex p-20 gap-4 overflow-x-auto w-screen">
+        <div className="flex p-20 gap-4 overflow-x-auto w-screen ">
             <Card title="Voicer ( In Progress )" description="A Testimonial gathering website for businesses." />
             <Card title="Appointment Management System" description="A appointment scheduling platform for patients with their preferred doctor and time slot." /> 
             <Card title="Wordlists and Cybersecurity" description="Generating fully customized wordlists for password based penetration testing." />
