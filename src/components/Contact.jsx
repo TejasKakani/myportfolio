@@ -37,7 +37,7 @@ function Contact() {
               </motion.a>
 
               <motion.a
-                href="/resume.pdf"
+                href="/myportfolio/resume.pdf"
                 download
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
