@@ -20,22 +20,22 @@ function Card({title, description, link, status}) {
               whileHover={{ scale: 1.03 }}
               className="bg-white/5 backdrop-blur-sm p-8 rounded-xl shadow-xl h-[450px] flex flex-col relative"
             >
-                <div className="flex items-start justify-between mb-6">
-                    <h1 className="font-bold text-2xl text-white">{title}</h1>
+        <div className="flex items-start justify-between mb-6">
+          <h1 className="font-bold text-xl md:text-2xl text-white">{title}</h1>
                     {status && (
                         <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-purple-500/20 text-purple-300 border border-purple-500/30">
                             {status}
                         </span>
                     )}
                 </div>
-                <p className="text-gray-300 text-lg flex-grow leading-relaxed">{description}</p>
+                <p className="text-gray-300 text-base md:text-lg flex-grow leading-relaxed">{description}</p>
                 {link && (
                   <motion.a
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
-                    className="mt-4 inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-lg text-center hover:shadow-lg transition-all"
+                    className="mt-4 inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 md:px-6 py-2 rounded-lg text-center hover:shadow-lg transition-all whitespace-nowrap mt-auto self-end"
                   >
                     View Project
                   </motion.a>
