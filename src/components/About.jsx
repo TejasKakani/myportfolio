@@ -21,15 +21,17 @@ function About() {
           >
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-xl">
               <p className="text-gray-300 text-lg md:text-xl leading-relaxed space-y-4">
-                I am a passionate developer with a strong interest in cybersecurity and low-level development. I enjoy solving complex problems, whether it's building a robust packet sniffer, exploring advanced techniques in red teaming, or designing algorithms to generate wordlists for penetration testing.
+                I am an Final Year Computer Engineering student passionate about coding, programming, and software development.With expertise in software programming and development, I specialize in crafting dynamic web applications using HTML, CSS, JavaScript, TypeScript, and the MERN stack, which includes MongoDB, ExpressJS, ReactJS, and NodeJS.
               </p>
               <p className="text-gray-300 text-lg md:text-xl leading-relaxed mt-4">
-                My experience spans across several technologies, including Node.js, C++, and MongoDB, with a focus on building efficient, console-based applications and integrating various systems for optimal performance.
+                 I have engaged in diverse projects such as developing a Hangman Game in C++, a cybersecurity Wordlist Generation Tool, and an Appointment Management System for healthcare, all showcasing my technical skills and creative problem-solving abilities.
               </p>
               <p className="text-gray-300 text-lg md:text-xl leading-relaxed mt-4">
-                Currently, I am working on a project that combines my love for wordlists and cybersecurity, developing a tool to generate custom wordlists based on clues.
+                 Additionally, I am currently working on a sustainable development project titled SDG Buddy. It is a sustainable tracker which is designed to help individuals in aligning their daily actions with the United Nation Sustainable development goals.
               </p>
-              
+              <p className="text-gray-300 text-lg md:text-xl leading-relaxed mt-4">
+                Other than that, I have a deep appreciation for mathematics, and I believe in asking precise, logical questions and then representing the entire thought process through mathematical reasoning is the most effective way to learn, understand, and solve problems. It provides not just answers, but a structured pathway of thinking where every step, every assumption, and every conclusion can be justified and explored.
+              </p>
               <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
                 <motion.div
                   whileHover={{ scale: 1.05 }}
