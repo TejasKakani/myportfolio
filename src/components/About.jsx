@@ -30,7 +30,7 @@ function About() {
                  Additionally, I am currently working on a sustainable development project titled SDG Buddy. It is a sustainable tracker which is designed to help individuals in aligning their daily actions with the United Nation Sustainable Development Goals.
               </p>
               <p className="text-gray-300 text-lg md:text-xl leading-relaxed mt-4">
-                Other than that, I have a deep appreciation for mathematics, and I believe in asking precise, logical questions and then representing the entire thought process through mathematical reasoning is the most effective way to learn, understand, and solve problems. It provides not just answers, but a structured pathway of thinking where every step, every assumption, and every conclusion can be justified and explored.
+                Other than that, I have a deep appreciation for mathematics, and I believe in asking precise, logical questions and then representing the entire thought process mathematically is the most effective way to learn, understand, and solve problems. It provides not just answers, but a structured pathway of thinking where every step, every assumption, and every conclusion can be justified and explored.
               </p>
               <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
                 <motion.div
