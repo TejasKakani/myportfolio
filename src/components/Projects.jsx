@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-function Card({title, description, link, status}) {
+function Card({title, description, link, status, demoLink}) {
     const ref = useRef(null);
     const {scrollYProgress} = useScroll({
         target: ref,
@@ -29,17 +29,30 @@ function Card({title, description, link, status}) {
                     )}
                 </div>
                 <p className="text-gray-300 text-base md:text-lg flex-grow leading-relaxed">{description}</p>
-                {link && (
+                <div className="flex gap-1 flex-col">
+                {demoLink && (
                   <motion.a
-                    href={link}
+                    href={demoLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
-                    className="mt-4 inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 md:px-6 py-2 rounded-lg text-center hover:shadow-lg transition-all whitespace-nowrap mt-auto self-end"
+                    className="m-2 inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 md:px-6 py-1 rounded-lg text-center hover:shadow-lg transition-all whitespace-nowrap mt-auto self-end"
+                  >
+                    View Demo
+                  </motion.a>
+                )}
+                {link && (
+                  <motion.a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.05 }}
+                  className="m-2 inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 md:px-6 py-1 rounded-lg text-center hover:shadow-lg transition-all whitespace-nowrap mt-auto self-end"
                   >
                     View Project
                   </motion.a>
                 )}
+                </div>
             </motion.div>
         </motion.div>
     );
@@ -96,7 +109,8 @@ function Projects() {
             title="SDG Buddy" 
             description="A sustainability tracking app that gamifies eco-friendly actions. Rewards users for sustainable behaviors aligned with UN SDGs. Features real-time tracking and an innovative reward system." 
             link="https://github.com/TejasKakani/SDG-Buddy"
-            status="In Progress"
+            status="Latest / Major Project"
+            demoLink="https://sdgbuddy.app/"
           />
           <Card 
             title="Appointment Management System" 

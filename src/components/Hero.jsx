@@ -12,7 +12,7 @@ function Hero() {
         >
             <h2 className="text-xl text-gray-200 mb-4">Hello, I'm</h2>
             <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent mb-4">Tejas Kakani</h1>
-            <h2 className="text-2xl md:text-3xl bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent mb-6">Software Developer</h2>
+            <h2 className="text-2xl md:text-3xl bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent mb-6">Full Stack Software Developer</h2>
             <p className="text-gray-300 max-w-md mb-8">Passionate about creating innovative solutions and turning complex problems into elegant code.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <motion.a
