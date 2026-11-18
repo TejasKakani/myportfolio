@@ -1,8 +1,31 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal developer portfolio of Tejas Kakani, a full-stack developer.
 
-Currently, two official plugins are available:
+Live site: https://tejaskakani.github.io/myportfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Sections
+
+- Hero and About
+- Technologies
+- Projects
+- Contact
+- Downloadable resume
+
+## Tech stack
+
+- React and Vite
+- Tailwind CSS
+- Motion for animations, react-scroll for navigation
+- react-icons and Lucide icons
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Author
+
+Tejas Kakani - [LinkedIn](https://www.linkedin.com/in/tejas-kakani) | [GitHub](https://github.com/TejasKakani)
