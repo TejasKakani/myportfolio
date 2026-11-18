@@ -12,13 +12,15 @@ function Hero() {
         >
             <h2 className="text-xl text-gray-200 mb-4">Hello, I'm</h2>
             <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent mb-4">Tejas Kakani</h1>
-            <h2 className="text-2xl md:text-3xl bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent mb-6">Full Stack Software Developer</h2>
-            <p className="text-gray-300 max-w-md mb-8">Passionate about creating innovative solutions and turning complex problems into elegant code.</p>
+            <h2 className="text-2xl md:text-3xl bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent mb-6">Full Stack Developer</h2>
+            <p className="text-gray-300 max-w-md mb-8">I build web applications with React, Next.js, Node.js and MongoDB. Speaker at the UNGA80 Science Summit. Open to remote software developer roles.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <motion.a
-                href="https://github.com/TejasKakani"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#projects"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+                }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center justify-center bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 h-14 rounded-full hover:shadow-lg transition-all cursor-pointer text-base font-medium"
@@ -51,8 +53,9 @@ function Hero() {
                       contactSection.scrollIntoView({ behavior: 'smooth' });
                     }
                   }}
-                  className="w-14 h-14 flex items-center justify-center hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 transition-all cursor-pointer rounded-full relative"
-                  title="Go to Contact to Download Resume"
+                  className="group w-14 h-14 flex items-center justify-center hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 transition-all cursor-pointer rounded-full relative"
+                  title="Go to Contact"
+                  aria-label="Go to Contact"
                   style={{ borderTopRightRadius: '9999px', borderBottomRightRadius: '9999px' }}
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">

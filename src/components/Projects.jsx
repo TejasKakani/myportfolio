@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-function Card({title, description, link, status, demoLink}) {
+function Card({title, description, link, status, demoLink, demoLabel = "View Demo", linkLabel = "View Code"}) {
     const ref = useRef(null);
     const {scrollYProgress} = useScroll({
         target: ref,
@@ -18,7 +18,7 @@ function Card({title, description, link, status, demoLink}) {
         >
             <motion.div 
               whileHover={{ scale: 1.03 }}
-              className="bg-white/5 backdrop-blur-sm p-8 rounded-xl shadow-xl h-[450px] flex flex-col relative"
+              className="bg-white/5 backdrop-blur-sm p-8 rounded-xl shadow-xl min-h-[450px] h-full flex flex-col relative"
             >
         <div className="flex items-start justify-between mb-6">
           <h1 className="font-bold text-xl md:text-2xl text-white">{title}</h1>
@@ -38,7 +38,7 @@ function Card({title, description, link, status, demoLink}) {
                     whileHover={{ scale: 1.05 }}
                     className="m-2 inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 md:px-6 py-1 rounded-lg text-center hover:shadow-lg transition-all whitespace-nowrap mt-auto self-end"
                   >
-                    View Demo
+                    {demoLabel}
                   </motion.a>
                 )}
                 {link && (
@@ -49,7 +49,7 @@ function Card({title, description, link, status, demoLink}) {
                   whileHover={{ scale: 1.05 }}
                   className="m-2 inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 md:px-6 py-1 rounded-lg text-center hover:shadow-lg transition-all whitespace-nowrap mt-auto self-end"
                   >
-                    View Project
+                    {linkLabel}
                   </motion.a>
                 )}
                 </div>
@@ -105,27 +105,35 @@ function Projects() {
          <div 
            ref={containerRef}
            className="flex gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar min-w-full scroll-smooth">
-          <Card 
-            title="SDG Buddy" 
-            description="A sustainability tracking app that gamifies eco-friendly actions. Rewards users for sustainable behaviors aligned with UN SDGs. Features real-time tracking and an innovative reward system." 
-            link="https://github.com/TejasKakani/SDG-Buddy"
-            status="Latest / Major Project"
+          <Card
+            title="SDG Buddy"
+            description="Tracks daily actions against the UN Sustainable Development Goals, with charts, streaks and a leaderboard. Includes a recommendation engine built on MongoDB Vector Search. Presented at UNGA80, 2025. Built with Next.js and MongoDB."
+            link="https://github.com/TejasKakani/sdg-buddy"
+            status="Featured"
             demoLink="https://sdgbuddy.app/"
+            demoLabel="Live Site"
           />
-          <Card 
-            title="Appointment Management System" 
-            description="A sophisticated platform for scheduling medical appointments. Features real-time availability and intuitive interface." 
+          <Card
+            title="Appointment Management System"
+            description="Doctors register and publish free time slots; patients book and reschedule appointments, and both sides can review each other. Built with Next.js, MongoDB and JWT authentication."
             link="https://github.com/TejasKakani/Appointment-Management-System"
           />
-          <Card 
-            title="Cybersecurity Tools" 
-            description="Security tools including custom wordlist generator. Built with focus on security best practices." 
-            link="https://github.com/TejasKakani/Wordlists-and-Cybersecurity"
+          <Card
+            title="Weighted Stream Cache Engine"
+            description="A C++20 cache engine that models seven-slot cache reuse as a minimum-cost flow problem to find an offline-optimal caching strategy, checked against an independent Python verifier."
+            link="https://github.com/TejasKakani/weighted-stream-cache"
           />
-          <Card 
-            title="Gaming Projects" 
-            description="Collection of games including Hangman (C++) and Ping Pong (C++ with SFML). Demonstrates strong fundamentals in game development." 
-            link="https://github.com/TejasKakani/HangMan"
+          <Card
+            title="Multi Item Clipboard"
+            description="A free Windows 10/11 clipboard manager published on the Microsoft Store. It saves everything you copy and pastes any item in one click. Built in C++ with the native Windows API; data stays on your device."
+            status="Microsoft Store"
+            demoLink="https://lnkd.in/d5BfvS52"
+            demoLabel="Get it on the Store"
+          />
+          <Card
+            title="Wordlists & Cybersecurity"
+            description="An educational wordlist generator built for security awareness and defensive testing."
+            link="https://github.com/TejasKakani/Wordlists-and-Cybersecurity"
           />
         </div>
       </div>

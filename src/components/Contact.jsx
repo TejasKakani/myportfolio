@@ -12,7 +12,7 @@ function Contact() {
           <h2 className="text-gray-200 mb-4">Contact</h2>
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent mb-6">Get In Touch</h1>
           <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto">
-            Want to chat about a project or just say hello? Feel free to reach out through email, and I'll get back to you as soon as possible.
+            I'm open to remote software developer roles. The best way to reach me is by email, and I'll get back to you as soon as possible.
           </p>
         </motion.div>
 
@@ -38,7 +38,7 @@ function Contact() {
 
               <motion.a
                 href="/myportfolio/resume.pdf"
-                download
+                download="Tejas_Kakani_Resume.pdf"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="flex items-center gap-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg font-semibold text-lg justify-center hover:shadow-lg transition-all"
@@ -72,10 +72,6 @@ function Contact() {
                     <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" />
                   </svg>
                 </motion.a>
-                {/* add codeforces profile */}
-                {/* <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="code-forces">
-  <path d="M24 19.5V12c0-.828-.672-1.5-1.5-1.5h-3c-.828 0-1.5.672-1.5 1.5v7.5c0 .828.672 1.5 1.5 1.5h3C23.328 21 24 20.328 24 19.5zM13.5 21c.828 0 1.5-.672 1.5-1.5v-15C15 3.672 14.328 3 13.5 3h-3C9.673 3 9 3.672 9 4.5v15c0 .828.673 1.5 1.5 1.5H13.5zM0 19.5C0 20.328.673 21 1.5 21h3C5.328 21 6 20.328 6 19.5V9c0-.828-.672-1.5-1.5-1.5h-3C.673 7.5 0 8.172 0 9V19.5z"></path>
-</svg> */}
                 <motion.a
                   href="https://codeforces.com/profile/tejaskakani"
                   target="_blank"
