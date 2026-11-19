@@ -30,7 +30,7 @@ function Hero() {
               </motion.a>
               <div className="inline-flex items-center bg-white/10 backdrop-blur-sm text-white rounded-full border border-white/10 overflow-hidden">
                 <motion.a
-                  href="/myportfolio/resume.pdf"
+                  href={`${import.meta.env.BASE_URL}resume.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.03 }}

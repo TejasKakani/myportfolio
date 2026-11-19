@@ -37,7 +37,7 @@ function Contact() {
               </motion.a>
 
               <motion.a
-                href="/myportfolio/resume.pdf"
+                href={`${import.meta.env.BASE_URL}resume.pdf`}
                 download="Tejas_Kakani_Resume.pdf"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
