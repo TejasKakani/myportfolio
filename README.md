@@ -2,7 +2,7 @@
 
 Personal developer portfolio of Tejas Kakani, a full-stack developer.
 
-Live site: https://tejaskakani.github.io/myportfolio
+Live site: https://tejaskakani.is-a.dev
 
 ## Sections
 
